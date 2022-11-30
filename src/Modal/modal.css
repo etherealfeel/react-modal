@@ -1,0 +1,86 @@
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.4);
+    position: fixed;
+}
+
+.modalContainer {
+    background-color: #eaeaea;
+    max-width: 600px;
+    width: 100%;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,.75);
+    border-radius: 5px;
+}
+
+img {
+    margin: 0 auto 20px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.closeBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: rgb(247, 104, 104);
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 32px 0 16px;
+    padding: 16px 32px;
+}
+
+.modalBtns {
+    display: flex;
+    padding: 16px;
+}
+
+.modalBtns button {
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin: 8px;
+    padding: 16px 0;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+}
+
+.btnPrimary {
+    background-color: #53c68c;
+}
+
+.btnSecondary {
+    background-color: #ff4d4d;
+}
+
+@media screen and (max-width: 500px) {
+    .modalContainer {
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    img {
+        width: 80%;
+    }
+}
